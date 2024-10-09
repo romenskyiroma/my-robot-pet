@@ -1,38 +1,5 @@
-input.onSound(DetectedSound.Loud, function () {
-    basic.showLeds(`
-        # . . . #
-        . # . # .
-        . . . . .
-        . # # # .
-        # . . . #
-        `)
-})
-input.onSound(DetectedSound.Quiet, function () {
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
-})
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    basic.showLeds(`
-        # # . # #
-        . . . . .
-        . # # # .
-        # . . . #
-        . # # # .
-        `)
-})
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        . . . . .
-        . # # # .
-        # . . . #
-        `)
+    basic.showIcon(IconNames.Heart)
 })
 input.onLogoEvent(TouchButtonEvent.Released, function () {
     basic.showLeds(`
@@ -44,7 +11,7 @@ input.onLogoEvent(TouchButtonEvent.Released, function () {
         `)
 })
 basic.forever(function () {
-    if (input.lightLevel() < 1) {
+    if (input.lightLevel() < 5) {
         basic.showLeds(`
             . . . . .
             # # . # #
@@ -55,7 +22,7 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (input.lightLevel() > 1) {
+    if (input.lightLevel() > 5) {
         basic.showLeds(`
             . . . . .
             . # . # .
