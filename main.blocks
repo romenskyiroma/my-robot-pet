@@ -1,0 +1,43 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="device_forever" id="jXh+:Z6`fiY1T(IL_p);" x="694" y="-423"><statement name="HANDLER"><block type="controls_if" id="I9,txliM5[zRU2O~Nny4"><value name="IF0"><shadow type="logic_boolean" id="/XN^=-bR-x+RSlyK3V77" disabled-reasons="MANUALLY_DISABLED"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="oW@KIA}9[YPxFOQMqk.R"><field name="OP">LT</field><value name="A"><shadow type="math_number" id="b2aJ-P[:vFJ`gZW-T2|J" disabled-reasons="MANUALLY_DISABLED"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="x{{j`Yz[z][|BJX=spsz"></block></value><value name="B"><shadow type="math_number" id="[!@kh^+p~4S_{_=3yDBl"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="IjCFgFBi2h6^!p|f8Oij"><field name="LEDS">`
+        . . . . . 
+        # # . # # 
+        . . . . . 
+        . # # # . 
+        . # # # .
+        `</field></block></statement></block></statement></block><block type="input_on_sound" id="FmWxhoJ%k_m#/TeF_+EZ" x="-12" y="-343"><field name="sound">DetectedSound.Loud</field><statement name="HANDLER"><block type="device_show_leds" id="+Q.eKz,hhh@Ix2Qyh/ET"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field></block></statement></block><block type="input_logo_event" id=";Qb(Frd`2BY^@$#iT}Tf" x="269" y="-240"><field name="action">TouchButtonEvent.Touched</field><statement name="HANDLER"><block type="device_show_leds" id="SuGNs~g!EAc_!CcJV91U"><field name="LEDS">`
+        # # . # # 
+        . . . . . 
+        . # # # . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement></block><block type="input_on_sound" id="8umW|h.gPt3Boo%V*QXz" x="0" y="0"><field name="sound">DetectedSound.Quiet</field><statement name="HANDLER"><block type="device_show_leds" id="god{Ma|0ExvjFGtj(+H]"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement></block><block type="device_forever" id="tTd!wYA%.0s!}%PQUi$M" x="681" y="27"><statement name="HANDLER"><block type="controls_if" id="k4^,;Hw.P[*UPF*SS8Y^"><value name="IF0"><shadow type="logic_boolean" id="(oc8Cj|+cxO3:IE4q|01" disabled-reasons="MANUALLY_DISABLED"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="S^f-e~%BeCf6B;=vg90l"><field name="OP">GT</field><value name="A"><shadow type="math_number" id="Us-2LtXARYyO$QpAHM5{" disabled-reasons="MANUALLY_DISABLED"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="`LFrAN*Z!9-J+MGx`Qp,"></block></value><value name="B"><shadow type="math_number" id="FYBIO76.yp]22C;EA*Kh"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="7EvQp%|8O)SC80x-nWf/"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement></block></statement></block><block type="input_logo_event" id="IK*N:^nDkZCgw)|53=;F" x="317" y="129"><field name="action">TouchButtonEvent.Released</field><statement name="HANDLER"><block type="device_show_leds" id="1b8w|Jr|Go@Vi|pAFL0j"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement></block><block type="input_logo_event" id="@^.|=BXwqDYdoi[]%I0g" x="353" y="514"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="device_show_leds" id="ZjeWAo)*tNSY3_EFQ:7-"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field></block></statement></block></xml>
